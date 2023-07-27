@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mortgage View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MortgageViewController" customModule="FinancialCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xtC-fK-hIP">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3gT-pc-Fc4">
+                                <rect key="frame" x="0.0" y="59" width="430" height="790"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="uUK-Sy-vng">
+                                        <rect key="frame" x="10" y="0.0" width="410" height="662"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-Qc-jfQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="410" height="268"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mjO-at-Rnc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="410" height="55"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHV-TR-7vl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="410" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Loan amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTx-sv-6dt">
+                                                                <rect key="frame" x="0.0" y="21" width="410" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wR8-YQ-QHm">
+                                                        <rect key="frame" x="0.0" y="71" width="410" height="55"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEK-68-dRh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="410" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Interest" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2PJ-mg-foS">
+                                                                <rect key="frame" x="0.0" y="21" width="410" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-vc-thF">
+                                                        <rect key="frame" x="0.0" y="142" width="410" height="55"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-G7-RwR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="410" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Payment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mu4-2c-feb">
+                                                                <rect key="frame" x="0.0" y="21" width="410" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JGR-bw-9wN">
+                                                        <rect key="frame" x="0.0" y="213" width="410" height="55"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDh-T5-pez">
+                                                                <rect key="frame" x="0.0" y="0.0" width="410" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No. of years" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-5T-Qcd">
+                                                                <rect key="frame" x="0.0" y="21" width="410" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="BJu-rJ-PEC">
+                                                <rect key="frame" x="0.0" y="292" width="410" height="370"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlu-Ru-SLU">
+                                                        <rect key="frame" x="0.0" y="242" width="410" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-2w-hqE">
+                                        <rect key="frame" x="0.0" y="662" width="430" height="128"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Aa-iJ-G8m">
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="128"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cid-El-kxs">
+                                                        <rect key="frame" x="5" y="73.666666666666629" width="420" height="34.333333333333343"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiN-FW-TKu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="420" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="gray" title="Clear">
+                                                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                    <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="clickbtnMortgageClear:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rDL-xB-4S0"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="cid-El-kxs" secondAttribute="trailing" constant="5" id="cLl-bL-Pfs"/>
+                                                    <constraint firstItem="cid-El-kxs" firstAttribute="leading" secondItem="5Aa-iJ-G8m" secondAttribute="leading" constant="5" id="ebX-ah-n3S"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cid-El-kxs" secondAttribute="bottom" constant="20" id="nDD-uf-VPj"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9sC-2w-hqE" secondAttribute="bottom" id="G7O-aR-5If"/>
+                                    <constraint firstItem="9sC-2w-hqE" firstAttribute="leading" secondItem="3gT-pc-Fc4" secondAttribute="leading" id="Muv-O2-kwJ"/>
+                                    <constraint firstItem="uUK-Sy-vng" firstAttribute="top" secondItem="3gT-pc-Fc4" secondAttribute="top" id="gw1-bX-Vat"/>
+                                    <constraint firstAttribute="trailing" secondItem="9sC-2w-hqE" secondAttribute="trailing" id="quT-9P-7gA"/>
+                                    <constraint firstItem="uUK-Sy-vng" firstAttribute="leading" secondItem="3gT-pc-Fc4" secondAttribute="leading" constant="10" id="rcD-ev-48e"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUK-Sy-vng" secondAttribute="trailing" constant="10" id="sly-XW-lh6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6R8-xf-vAw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3gT-pc-Fc4" firstAttribute="top" secondItem="6R8-xf-vAw" secondAttribute="top" id="OPT-xo-SDn"/>
+                            <constraint firstItem="3gT-pc-Fc4" firstAttribute="leading" secondItem="xtC-fK-hIP" secondAttribute="leading" id="QqL-5T-PDP"/>
+                            <constraint firstItem="6R8-xf-vAw" firstAttribute="trailing" secondItem="3gT-pc-Fc4" secondAttribute="trailing" id="XbS-xv-cnP"/>
+                            <constraint firstItem="6R8-xf-vAw" firstAttribute="bottom" secondItem="3gT-pc-Fc4" secondAttribute="bottom" id="gQ7-F4-0xP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Bank" selectedImage="Bank" id="VlS-4d-QnC">
+                        <inset key="imageInsets" minX="0.0" minY="110" maxX="0.0" maxY="110"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tabMenuItemMortage" destination="VlS-4d-QnC" id="LBV-QN-4J7"/>
+                        <outlet property="txtMortgageInterest" destination="2PJ-mg-foS" id="ob9-Fi-NBG"/>
+                        <outlet property="txtMortgageLoanAmmount" destination="hTx-sv-6dt" id="wda-zu-2aT"/>
+                        <outlet property="txtMortgageNumberofYears" destination="W0B-5T-Qcd" id="q5B-6Z-udG"/>
+                        <outlet property="txtMortgagePayment" destination="mu4-2c-feb" id="fPD-Ly-h2Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bank" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

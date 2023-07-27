@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="71g-rd-MpZ">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinancialCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-S9-MIU">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppR-gk-lZi">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="crV-zR-cM9">
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MoF-6n-rNc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="430" height="405"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buB-Hl-99X">
+                                                                <rect key="frame" x="0.0" y="0.0" width="430" height="405"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9gs-sf-ejf">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="430" height="405"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-HI-g0X">
+                                                                                <rect key="frame" x="0.0" y="93" width="430" height="219"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="8oK-5i-yoD">
+                                                                                        <rect key="frame" x="148.33333333333331" y="0.0" width="133.33333333333331" height="135.33333333333334"/>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to financial calculator!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJc-Wb-XNw">
+                                                                                        <rect key="frame" x="56.333333333333343" y="135.33333333333334" width="317.66666666666663" height="83.666666666666657"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="9gs-sf-ejf" secondAttribute="bottom" id="DAB-PE-8aS"/>
+                                                                    <constraint firstItem="9gs-sf-ejf" firstAttribute="top" secondItem="buB-Hl-99X" secondAttribute="top" id="bUq-Wh-N3Z"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="9gs-sf-ejf" secondAttribute="trailing" id="euF-57-1ye"/>
+                                                                    <constraint firstItem="9gs-sf-ejf" firstAttribute="leading" secondItem="buB-Hl-99X" secondAttribute="leading" id="fMV-of-JH5"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-Yc-06G">
+                                                        <rect key="frame" x="0.0" y="430" width="430" height="502"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7r-C5-2Gf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="430" height="502"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-I6-Vjh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="430" height="225"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="tuq-xa-OHq">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZjJ-lE-03N">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="202.66666666666666" height="100"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PiggyBankMain" translatesAutoresizingMaskIntoConstraints="NO" id="qEz-c0-gVi">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="202.66666666666666" height="100"/>
+                                                                                                <gestureRecognizers/>
+                                                                                                <connections>
+                                                                                                    <outletCollection property="gestureRecognizers" destination="1iE-GK-q4k" appends="YES" id="Lbz-D2-BfH"/>
+                                                                                                </connections>
+                                                                                            </imageView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K4T-Xe-Ogu">
+                                                                                        <rect key="frame" x="227.66666666666663" y="0.0" width="202.33333333333337" height="100"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BankMain" translatesAutoresizingMaskIntoConstraints="NO" id="sdF-UI-i0u">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="202.33333333333334" height="100"/>
+                                                                                                <gestureRecognizers/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="100" id="l9l-GD-daa"/>
+                                                                                                </constraints>
+                                                                                                <connections>
+                                                                                                    <outletCollection property="gestureRecognizers" destination="UAf-bg-N2l" appends="YES" id="c2f-B4-hL7"/>
+                                                                                                </connections>
+                                                                                            </imageView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="vrI-6M-FkQ">
+                                                                                <rect key="frame" x="0.0" y="125" width="430" height="100"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7ZS-po-Eut">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="202.66666666666666" height="100"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="LoanMain" translatesAutoresizingMaskIntoConstraints="NO" id="LUo-31-SEN">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="202.66666666666666" height="100"/>
+                                                                                                <gestureRecognizers/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="100" id="XBC-0Z-zsQ"/>
+                                                                                                </constraints>
+                                                                                                <connections>
+                                                                                                    <outletCollection property="gestureRecognizers" destination="gYE-ZW-q1M" appends="YES" id="eji-ge-SIh"/>
+                                                                                                </connections>
+                                                                                            </imageView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-kl-PUE">
+                                                                                        <rect key="frame" x="227.66666666666663" y="0.0" width="202.33333333333337" height="100"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="FAQMain" translatesAutoresizingMaskIntoConstraints="NO" id="XfT-Cu-VJ9">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="202.33333333333334" height="100"/>
+                                                                                                <gestureRecognizers/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="100" id="vf8-A8-kZT"/>
+                                                                                                </constraints>
+                                                                                                <connections>
+                                                                                                    <outletCollection property="gestureRecognizers" destination="aB3-aX-L9W" appends="YES" id="z34-A1-8pM"/>
+                                                                                                </connections>
+                                                                                            </imageView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="tuv-I6-Vjh" firstAttribute="top" secondItem="Q7r-C5-2Gf" secondAttribute="top" id="0Dl-uM-yLl"/>
+                                                                    <constraint firstItem="tuv-I6-Vjh" firstAttribute="leading" secondItem="Q7r-C5-2Gf" secondAttribute="leading" id="o4g-Fy-sCn"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="tuv-I6-Vjh" secondAttribute="trailing" id="tU3-fP-Hr0"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="MoF-6n-rNc" secondAttribute="trailing" id="3Z4-0D-84f"/>
+                                                    <constraint firstItem="MoF-6n-rNc" firstAttribute="top" secondItem="crV-zR-cM9" secondAttribute="top" id="UVj-lX-0X6"/>
+                                                    <constraint firstItem="p9Y-Yc-06G" firstAttribute="leading" secondItem="crV-zR-cM9" secondAttribute="leading" id="jJd-pR-TSV"/>
+                                                    <constraint firstItem="p9Y-Yc-06G" firstAttribute="top" secondItem="crV-zR-cM9" secondAttribute="top" constant="430" id="mbV-3I-nHh"/>
+                                                    <constraint firstItem="MoF-6n-rNc" firstAttribute="leading" secondItem="crV-zR-cM9" secondAttribute="leading" id="xqe-cl-ArJ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="crV-zR-cM9" firstAttribute="leading" secondItem="ppR-gk-lZi" secondAttribute="leading" id="3Bn-6u-WbQ"/>
+                                            <constraint firstItem="crV-zR-cM9" firstAttribute="top" secondItem="ppR-gk-lZi" secondAttribute="top" id="47k-U0-kc2"/>
+                                            <constraint firstAttribute="trailing" secondItem="crV-zR-cM9" secondAttribute="trailing" id="S5F-F8-Pv7"/>
+                                            <constraint firstItem="crV-zR-cM9" firstAttribute="top" secondItem="ppR-gk-lZi" secondAttribute="top" id="Uxx-ZQ-UX8"/>
+                                            <constraint firstItem="crV-zR-cM9" firstAttribute="leading" secondItem="ppR-gk-lZi" secondAttribute="leading" id="VsD-bA-YsX"/>
+                                            <constraint firstAttribute="bottom" secondItem="crV-zR-cM9" secondAttribute="bottom" id="pws-JX-3r7"/>
+                                            <constraint firstAttribute="trailing" secondItem="crV-zR-cM9" secondAttribute="trailing" id="spx-5L-jBy"/>
+                                            <constraint firstAttribute="bottom" secondItem="crV-zR-cM9" secondAttribute="bottom" id="x3P-75-HLf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PX7-S9-MIU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="1XX-sE-g3G"/>
+                            <constraint firstItem="PX7-S9-MIU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5XF-73-Zr6"/>
+                            <constraint firstItem="PX7-S9-MIU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9z1-FX-QK7"/>
+                            <constraint firstItem="PX7-S9-MIU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IBa-d2-FUk"/>
+                            <constraint firstAttribute="trailing" secondItem="PX7-S9-MIU" secondAttribute="trailing" id="K1L-Qh-93O"/>
+                            <constraint firstItem="PX7-S9-MIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="akZ-vY-H2l"/>
+                            <constraint firstItem="PX7-S9-MIU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bEi-qe-eZt"/>
+                            <constraint firstAttribute="bottom" secondItem="PX7-S9-MIU" secondAttribute="bottom" id="o75-FW-Ken"/>
+                            <constraint firstItem="PX7-S9-MIU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p3s-y7-iWt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wze-5y-ooB"/>
+                    <connections>
+                        <outlet property="myView" destination="buB-Hl-99X" id="sMI-W2-Ffi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1iE-GK-q4k">
+                    <connections>
+                        <outlet property="delegate" destination="qEz-c0-gVi" id="jNC-IJ-rBJ"/>
+                        <segue destination="MBA-x4-R3o" kind="show" identifier="Loans" id="QCp-oc-Bx3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UAf-bg-N2l">
+                    <connections>
+                        <segue destination="MBA-x4-R3o" kind="show" identifier="Mortgage" id="yMc-gg-tAl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gYE-ZW-q1M">
+                    <connections>
+                        <segue destination="MBA-x4-R3o" kind="show" identifier="Savings" id="InU-qb-he1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aB3-aX-L9W">
+                    <connections>
+                        <segue destination="mfd-nW-N1P" kind="show" id="756-4A-1FW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1026.9767441860465" y="3.8626609442060089"/>
+        </scene>
+        <!--TabView-->
+        <scene sceneID="dKY-ny-x2Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabView" id="MBA-x4-R3o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GOu-d8-996"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0w-ou-zn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="9"/>
+        </scene>
+        <!--FAQ-->
+        <scene sceneID="MqV-vJ-Sgj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FAQ" id="mfd-nW-N1P" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Frequently asked question" id="qSe-dy-CTr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUE-pd-Y4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="140"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Pe-ei-fYp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="71g-rd-MpZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="joI-fp-9r2">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HZS-1c-kik"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Wh-Q6-FhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yMc-gg-tAl"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="BankMain" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="FAQMain" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="Image" width="133.33332824707031" height="135.33332824707031"/>
+        <image name="LoanMain" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="PiggyBankMain" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

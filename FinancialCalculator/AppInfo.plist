@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppName</key>
+	<string>Financial Calculator</string>
+	<key>AppVersion</key>
+	<string>Version 1.0</string>
+	<key>FAQs</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>How to calculate savings?</string>
+			<key>Steps</key>
+			<array>
+				<string>Click on savings button in home</string>
+				<string>Enter principal amount</string>
+				<string>Enter interest</string>
+				<string>Enter compounds per year</string>
+				<string>Enter payments per year</string>
+				<string>Then the future value will be automatically calculated</string>
+				<string>If you need to re-calculate the future value clear the field and system will calculate the future value again</string>
+				<string>If you need to calculate the principal amount, interest or payments per year do the steps by filling the rest of the fiels reamining the required field you need to calculate</string>
+				<string>Click on save button to save to history</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>How to calculate mortgage?</string>
+			<key>Steps</key>
+			<array>
+				<string>Click on mortgage button in home</string>
+				<string>Enter loan amount</string>
+				<string>Enter interest</string>
+				<string>Enter number of years</string>
+				<string>Then the payment will be automatically calculated</string>
+				<string>If you need to re-calculate the payment clear the field and system will calculate the payment again</string>
+				<string>If you need to calculate the loan amount, interest or number of years do the steps by filling the rest of the fiels reamining the required field you need to calculate</string>
+				<string>Click on save button to save to history</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>How to calculate compound loans and savings?</string>
+			<key>Steps</key>
+			<array>
+				<string>Click on compound loans in home</string>
+				<string>Enter present value</string>
+				<string>Enter interest</string>
+				<string>Enter payment</string>
+				<string>Enter compunds per year</string>
+				<string>Enter number of payments</string>
+				<string>Select end switch</string>
+				<string>Then the future value will be automatically calculated</string>
+				<string>If you need to re-calculate the future value clear the field and system will calculate the future value again</string>
+				<string>Click on save button to save to history</string>
+				<string></string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>How to view history?</string>
+			<key>Steps</key>
+			<array>
+				<string>Click on savings button, mortgage button or compound loans and savings button</string>
+				<string>Then from the navigation panel select history</string>
+				<string>Select the history item to view the details</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
