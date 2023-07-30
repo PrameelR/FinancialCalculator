@@ -19,16 +19,29 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Od9-ay-sJU">
                                 <rect key="frame" x="10" y="100" width="373" height="88.666666666666686"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbi-Qe-gnM">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yxa-8S-Ts3">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="28.666666666666668"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0zn-Sb-So1">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbi-Qe-gnM">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="28.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0zn-Sb-So1">
                                         <rect key="frame" x="0.0" y="38.666666666666657" width="373" height="50"/>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0zn-Sb-So1" secondAttribute="trailing" id="2Ug-fL-2Ad"/>
+                                    <constraint firstAttribute="trailing" secondItem="0zn-Sb-So1" secondAttribute="trailing" id="8V4-4e-MeZ"/>
+                                    <constraint firstItem="0zn-Sb-So1" firstAttribute="leading" secondItem="Od9-ay-sJU" secondAttribute="leading" id="8po-Kg-Tpz"/>
+                                    <constraint firstAttribute="trailing" secondItem="0zn-Sb-So1" secondAttribute="trailing" id="aDi-aG-KBP"/>
+                                    <constraint firstItem="0zn-Sb-So1" firstAttribute="leading" secondItem="Od9-ay-sJU" secondAttribute="leading" id="nRd-4G-RHM"/>
+                                    <constraint firstItem="0zn-Sb-So1" firstAttribute="leading" secondItem="Od9-ay-sJU" secondAttribute="leading" id="psB-IF-D3W"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ScS-nG-FVN"/>
@@ -41,7 +54,8 @@
                     </view>
                     <connections>
                         <outlet property="lblFAQTitle" destination="Dbi-Qe-gnM" id="Er8-gL-WXQ"/>
-                        <outlet property="viewStackSteps" destination="Od9-ay-sJU" id="qxx-J9-PRZ"/>
+                        <outlet property="viewStackMain" destination="Od9-ay-sJU" id="61R-Uh-3kv"/>
+                        <outlet property="viewStackSteps" destination="0zn-Sb-So1" id="9wR-Ld-R2Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,7 +10,9 @@ import UIKit
 class FAQViewController: UIViewController {
 
     @IBOutlet weak var viewStackSteps: UIStackView!
+    @IBOutlet weak var viewStackMain: UIStackView!
     @IBOutlet weak var lblFAQTitle: UILabel!
+    
     var faq: FAQ?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +23,20 @@ class FAQViewController: UIViewController {
             for step in faqdetail.steps {
                 let stacksubview = createStackView(String(count),step)
                 viewStackSteps.addArrangedSubview(stacksubview)
+                
+                stacksubview.translatesAutoresizingMaskIntoConstraints = false
+                let leftConstraint = NSLayoutConstraint(item: stacksubview, attribute: .leading, relatedBy: .equal, toItem: viewStackSteps, attribute: .leading, multiplier: 1.0, constant: 0)
+                let rightConstraint = NSLayoutConstraint(item: stacksubview, attribute: .trailing, relatedBy: .equal, toItem: viewStackSteps, attribute: .trailing, multiplier: 1.0, constant: 0)
+                
+                viewStackSteps.addConstraints([leftConstraint, rightConstraint])
+                
                 count = count + 1
             }
             
         }
+        
+        
+        //setupConstraints()
         
         
         // Do any additional setup after loading the view.
@@ -37,6 +49,7 @@ class FAQViewController: UIViewController {
         viewstack.axis = .horizontal
         viewstack.alignment = .fill
         viewstack.distribution = .fill
+        viewstack.spacing = 4
         let lblTitle = UILabel()
         lblTitle.text = "\(stepnumber). "
         lblTitle.font = UIFont.boldSystemFont(ofSize: 14)
@@ -53,7 +66,7 @@ class FAQViewController: UIViewController {
         return viewstack
     }
     
-
+    
     /*
     // MARK: - Navigation
 

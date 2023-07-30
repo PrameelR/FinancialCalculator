@@ -12,6 +12,10 @@
 		0A0569D12A72C735000CDCD4 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0569D02A72C735000CDCD4 /* HistoryTableViewController.swift */; };
 		0A0569D42A72CED7000CDCD4 /* FinancialCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A0569D22A72CED7000CDCD4 /* FinancialCalculator.xcdatamodeld */; };
 		0A0A1A122A753C7500D59AC0 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A1A112A753C7500D59AC0 /* HistoryTableViewCell.swift */; };
+		0A2B88532A76A67A00823A56 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B88512A76A67A00823A56 /* History+CoreDataProperties.swift */; };
+		0A2B88542A76A67A00823A56 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B88522A76A67A00823A56 /* History+CoreDataClass.swift */; };
+		0A2B88572A76A69D00823A56 /* Mortgage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B88552A76A69D00823A56 /* Mortgage+CoreDataClass.swift */; };
+		0A2B88582A76A69D00823A56 /* Mortgage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B88562A76A69D00823A56 /* Mortgage+CoreDataProperties.swift */; };
 		0A62A67F2A6DA984004AEADB /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A67E2A6DA984004AEADB /* SavingsViewController.swift */; };
 		0A62A6812A6DA9A2004AEADB /* MortgageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A6802A6DA9A2004AEADB /* MortgageViewController.swift */; };
 		0A62A6832A6DA9B4004AEADB /* CompoundLoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A6822A6DA9B4004AEADB /* CompoundLoanViewController.swift */; };
@@ -20,8 +24,6 @@
 		0A62A6892A6DB4BD004AEADB /* FAQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A6882A6DB4BD004AEADB /* FAQTableViewController.swift */; };
 		0A62A68C2A6DB654004AEADB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A68B2A6DB654004AEADB /* Common.swift */; };
 		0A6630642A748BDC00942CB5 /* SaveAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6630622A748BDC00942CB5 /* SaveAlertViewController.swift */; };
-		0A7CA8D82A74BEF900E95EB8 /* Mortgage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CA8CA2A74BEF900E95EB8 /* Mortgage+CoreDataClass.swift */; };
-		0A7CA8D92A74BEF900E95EB8 /* Mortgage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7CA8CB2A74BEF900E95EB8 /* Mortgage+CoreDataProperties.swift */; };
 		0A88FEBF2A6CFE6200E29BC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88FEBE2A6CFE6200E29BC1 /* AppDelegate.swift */; };
 		0A88FEC12A6CFE6200E29BC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88FEC02A6CFE6200E29BC1 /* SceneDelegate.swift */; };
 		0A88FEC32A6CFE6200E29BC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88FEC22A6CFE6200E29BC1 /* ViewController.swift */; };
@@ -48,8 +50,6 @@
 		0AF405FD2A74CC8500768A59 /* MortgageHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF405F32A74CC8500768A59 /* MortgageHistory+CoreDataProperties.swift */; };
 		0AF405FE2A74CC8500768A59 /* LoanHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF405F42A74CC8500768A59 /* LoanHistory+CoreDataClass.swift */; };
 		0AF405FF2A74CC8500768A59 /* LoanHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF405F52A74CC8500768A59 /* LoanHistory+CoreDataProperties.swift */; };
-		0AF406022A74CCBA00768A59 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF406002A74CCBA00768A59 /* History+CoreDataClass.swift */; };
-		0AF406032A74CCBA00768A59 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF406012A74CCBA00768A59 /* History+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +58,10 @@
 		0A0569D02A72C735000CDCD4 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		0A0569D32A72CED7000CDCD4 /* FinancialCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinancialCalculator.xcdatamodel; sourceTree = "<group>"; };
 		0A0A1A112A753C7500D59AC0 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		0A2B88512A76A67A00823A56 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0A2B88522A76A67A00823A56 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0A2B88552A76A69D00823A56 /* Mortgage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mortgage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0A2B88562A76A69D00823A56 /* Mortgage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mortgage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0A62A67E2A6DA984004AEADB /* SavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsViewController.swift; sourceTree = "<group>"; };
 		0A62A6802A6DA9A2004AEADB /* MortgageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageViewController.swift; sourceTree = "<group>"; };
 		0A62A6822A6DA9B4004AEADB /* CompoundLoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundLoanViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +70,6 @@
 		0A62A6882A6DB4BD004AEADB /* FAQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewController.swift; sourceTree = "<group>"; };
 		0A62A68B2A6DB654004AEADB /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		0A6630622A748BDC00942CB5 /* SaveAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAlertViewController.swift; sourceTree = "<group>"; };
-		0A7CA8CA2A74BEF900E95EB8 /* Mortgage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mortgage+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		0A7CA8CB2A74BEF900E95EB8 /* Mortgage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mortgage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		0A88FEBB2A6CFE6200E29BC1 /* FinancialCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A88FEBE2A6CFE6200E29BC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A88FEC02A6CFE6200E29BC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +98,6 @@
 		0AF405F32A74CC8500768A59 /* MortgageHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MortgageHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0AF405F42A74CC8500768A59 /* LoanHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoanHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0AF405F52A74CC8500768A59 /* LoanHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoanHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		0AF406002A74CCBA00768A59 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		0AF406012A74CCBA00768A59 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +123,13 @@
 		0A6630C02A749EC800942CB5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0AF406002A74CCBA00768A59 /* History+CoreDataClass.swift */,
-				0AF406012A74CCBA00768A59 /* History+CoreDataProperties.swift */,
+				0A2B88522A76A67A00823A56 /* History+CoreDataClass.swift */,
+				0A2B88512A76A67A00823A56 /* History+CoreDataProperties.swift */,
 				0AF405EC2A74CC8500768A59 /* Loan+CoreDataClass.swift */,
 				0AF405ED2A74CC8500768A59 /* Loan+CoreDataProperties.swift */,
 				0AF405EE2A74CC8500768A59 /* SavingsHistory+CoreDataClass.swift */,
+				0A2B88552A76A69D00823A56 /* Mortgage+CoreDataClass.swift */,
+				0A2B88562A76A69D00823A56 /* Mortgage+CoreDataProperties.swift */,
 				0AF405EF2A74CC8500768A59 /* SavingsHistory+CoreDataProperties.swift */,
 				0AF405F02A74CC8500768A59 /* Savings+CoreDataClass.swift */,
 				0AF405F12A74CC8500768A59 /* Savings+CoreDataProperties.swift */,
@@ -135,8 +137,6 @@
 				0AF405F32A74CC8500768A59 /* MortgageHistory+CoreDataProperties.swift */,
 				0AF405F42A74CC8500768A59 /* LoanHistory+CoreDataClass.swift */,
 				0AF405F52A74CC8500768A59 /* LoanHistory+CoreDataProperties.swift */,
-				0A7CA8CA2A74BEF900E95EB8 /* Mortgage+CoreDataClass.swift */,
-				0A7CA8CB2A74BEF900E95EB8 /* Mortgage+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,19 +301,19 @@
 				0AF354EF2A75B6BD00A9EA29 /* FAQTableViewCell.swift in Sources */,
 				0AF405F92A74CC8500768A59 /* SavingsHistory+CoreDataProperties.swift in Sources */,
 				0AF405FD2A74CC8500768A59 /* MortgageHistory+CoreDataProperties.swift in Sources */,
-				0AF406032A74CCBA00768A59 /* History+CoreDataProperties.swift in Sources */,
 				0AF405FA2A74CC8500768A59 /* Savings+CoreDataClass.swift in Sources */,
+				0A2B88542A76A67A00823A56 /* History+CoreDataClass.swift in Sources */,
 				0AF354E72A75863D00A9EA29 /* HistoryDetailViewController.swift in Sources */,
 				0AF405F82A74CC8500768A59 /* SavingsHistory+CoreDataClass.swift in Sources */,
-				0AF406022A74CCBA00768A59 /* History+CoreDataClass.swift in Sources */,
+				0A2B88532A76A67A00823A56 /* History+CoreDataProperties.swift in Sources */,
 				0A0569D12A72C735000CDCD4 /* HistoryTableViewController.swift in Sources */,
+				0A2B88572A76A69D00823A56 /* Mortgage+CoreDataClass.swift in Sources */,
 				0A62A68C2A6DB654004AEADB /* Common.swift in Sources */,
 				0AF405FC2A74CC8500768A59 /* MortgageHistory+CoreDataClass.swift in Sources */,
-				0A7CA8D92A74BEF900E95EB8 /* Mortgage+CoreDataProperties.swift in Sources */,
 				0A0A1A122A753C7500D59AC0 /* HistoryTableViewCell.swift in Sources */,
+				0A2B88582A76A69D00823A56 /* Mortgage+CoreDataProperties.swift in Sources */,
 				0A88FEBF2A6CFE6200E29BC1 /* AppDelegate.swift in Sources */,
 				0A88FEC12A6CFE6200E29BC1 /* SceneDelegate.swift in Sources */,
-				0A7CA8D82A74BEF900E95EB8 /* Mortgage+CoreDataClass.swift in Sources */,
 				0A62A6892A6DB4BD004AEADB /* FAQTableViewController.swift in Sources */,
 				0AF405F72A74CC8500768A59 /* Loan+CoreDataProperties.swift in Sources */,
 				0AF354EB2A75A9A000A9EA29 /* FAQObject.swift in Sources */,
