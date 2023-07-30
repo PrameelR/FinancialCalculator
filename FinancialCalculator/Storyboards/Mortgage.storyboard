@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3gT-pc-Fc4">
-                                <rect key="frame" x="0.0" y="59" width="430" height="790"/>
+                                <rect key="frame" x="10" y="69" width="410" height="780"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="uUK-Sy-vng">
-                                        <rect key="frame" x="10" y="0.0" width="410" height="662"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="652"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-Qc-jfQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="410" height="268"/>
@@ -92,10 +92,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="BJu-rJ-PEC">
-                                                <rect key="frame" x="0.0" y="292" width="410" height="370"/>
+                                                <rect key="frame" x="0.0" y="292" width="410" height="360"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlu-Ru-SLU">
-                                                        <rect key="frame" x="0.0" y="242" width="410" height="128"/>
+                                                        <rect key="frame" x="0.0" y="232" width="410" height="128"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
@@ -103,16 +103,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-2w-hqE">
-                                        <rect key="frame" x="0.0" y="662" width="430" height="128"/>
+                                        <rect key="frame" x="0.0" y="652" width="410" height="128"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Aa-iJ-G8m">
-                                                <rect key="frame" x="0.0" y="0.0" width="430" height="128"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="410" height="128"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cid-El-kxs">
-                                                        <rect key="frame" x="5" y="73.666666666666629" width="420" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="63.666666666666629" width="410" height="34.333333333333343"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiN-FW-TKu">
-                                                                <rect key="frame" x="0.0" y="0.0" width="420" height="34.333333333333336"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="410" height="34.333333333333336"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="gray" title="Clear">
                                                                     <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -127,9 +127,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="cid-El-kxs" secondAttribute="trailing" constant="5" id="cLl-bL-Pfs"/>
-                                                    <constraint firstItem="cid-El-kxs" firstAttribute="leading" secondItem="5Aa-iJ-G8m" secondAttribute="leading" constant="5" id="ebX-ah-n3S"/>
-                                                    <constraint firstAttribute="bottom" secondItem="cid-El-kxs" secondAttribute="bottom" constant="20" id="nDD-uf-VPj"/>
+                                                    <constraint firstItem="cid-El-kxs" firstAttribute="leading" secondItem="5Aa-iJ-G8m" secondAttribute="leading" id="ebX-ah-n3S"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cid-El-kxs" secondAttribute="bottom" constant="30" id="nDD-uf-VPj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cid-El-kxs" secondAttribute="trailing" id="z43-WQ-Ypb"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -138,20 +138,21 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="9sC-2w-hqE" secondAttribute="bottom" id="G7O-aR-5If"/>
                                     <constraint firstItem="9sC-2w-hqE" firstAttribute="leading" secondItem="3gT-pc-Fc4" secondAttribute="leading" id="Muv-O2-kwJ"/>
+                                    <constraint firstItem="uUK-Sy-vng" firstAttribute="leading" secondItem="3gT-pc-Fc4" secondAttribute="leading" id="OPd-aZ-NpC"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUK-Sy-vng" secondAttribute="trailing" id="Pm4-Cj-fUV"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUK-Sy-vng" secondAttribute="trailing" id="a4r-Sp-CmE"/>
                                     <constraint firstItem="uUK-Sy-vng" firstAttribute="top" secondItem="3gT-pc-Fc4" secondAttribute="top" id="gw1-bX-Vat"/>
                                     <constraint firstAttribute="trailing" secondItem="9sC-2w-hqE" secondAttribute="trailing" id="quT-9P-7gA"/>
-                                    <constraint firstItem="uUK-Sy-vng" firstAttribute="leading" secondItem="3gT-pc-Fc4" secondAttribute="leading" constant="10" id="rcD-ev-48e"/>
-                                    <constraint firstAttribute="trailing" secondItem="uUK-Sy-vng" secondAttribute="trailing" constant="10" id="sly-XW-lh6"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6R8-xf-vAw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3gT-pc-Fc4" firstAttribute="top" secondItem="6R8-xf-vAw" secondAttribute="top" id="OPT-xo-SDn"/>
-                            <constraint firstItem="3gT-pc-Fc4" firstAttribute="leading" secondItem="xtC-fK-hIP" secondAttribute="leading" id="QqL-5T-PDP"/>
-                            <constraint firstItem="6R8-xf-vAw" firstAttribute="trailing" secondItem="3gT-pc-Fc4" secondAttribute="trailing" id="XbS-xv-cnP"/>
+                            <constraint firstItem="3gT-pc-Fc4" firstAttribute="leading" secondItem="6R8-xf-vAw" secondAttribute="leading" constant="10" id="eMj-Sb-VXo"/>
                             <constraint firstItem="6R8-xf-vAw" firstAttribute="bottom" secondItem="3gT-pc-Fc4" secondAttribute="bottom" id="gQ7-F4-0xP"/>
+                            <constraint firstAttribute="trailing" secondItem="3gT-pc-Fc4" secondAttribute="trailing" constant="10" id="iae-xA-loZ"/>
+                            <constraint firstItem="3gT-pc-Fc4" firstAttribute="top" secondItem="6R8-xf-vAw" secondAttribute="top" constant="10" id="pce-ZD-XxG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Bank" selectedImage="Bank" id="VlS-4d-QnC">
