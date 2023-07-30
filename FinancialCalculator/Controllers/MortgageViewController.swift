@@ -34,6 +34,12 @@ class MortgageViewController: UIViewController, UITextFieldDelegate {
         txtMortgagePayment.delegate = self
         txtMortgageNumberofYears.delegate = self
         
+        
+        txtMortgagePayment.clearButtonMode = .whileEditing
+        txtMortgageInterest.clearButtonMode = .whileEditing
+        txtMortgageLoanAmmount.clearButtonMode = .whileEditing
+        txtMortgageNumberofYears.clearButtonMode = .whileEditing
+        
         self.clearValues()
         self.loadMortgageLastData()
         // Do any additional setup after loading the view.

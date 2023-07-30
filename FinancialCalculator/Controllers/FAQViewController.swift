@@ -47,7 +47,7 @@ class FAQViewController: UIViewController {
         
         let viewstack = UIStackView()
         viewstack.axis = .horizontal
-        viewstack.alignment = .fill
+        viewstack.alignment = .top
         viewstack.distribution = .fill
         viewstack.spacing = 4
         let lblTitle = UILabel()

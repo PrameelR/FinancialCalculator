@@ -44,6 +44,14 @@ class SavingsViewController: UIViewController, UITextFieldDelegate {
         txtSavingsFutureValue.delegate = self
         txtSavingsNumberOfPayments.delegate = self
         
+        txtSavingsPrincipalAmount.clearButtonMode = .whileEditing
+        txtSavingsInterest.clearButtonMode = .whileEditing
+        txtSavingsPayments.clearButtonMode = .whileEditing
+        txtSavingsFutureValue.clearButtonMode = .whileEditing
+        txtSavingsCompoundsPerYear.clearButtonMode = .whileEditing
+        txtSavingsPaymentsPerYear.clearButtonMode = .whileEditing
+        txtSavingsNumberOfPayments.clearButtonMode = .whileEditing
+        
         self.viewScolllContent.contentSize = CGSize(width: self.viewSubStackContent.bounds.width, height: self.viewSubStackContent.bounds.height)
         
         self.clearValues()

@@ -203,6 +203,10 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+        if let refershDataViewController = viewController as? RefereshDataDelegate {
+            refershDataViewController.refereshData()
+        }
         let selectedIndex = tabBarController.viewControllers?.firstIndex(of: viewController)
         if(selectedIndex == 0){
             self.title = "Compounds loans and savings"
@@ -216,6 +220,7 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         }else if(selectedIndex == 3){
             self.title = "History"
             self.navigationItem.rightBarButtonItem = nil;
+            
         }else{
             
         }

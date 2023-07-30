@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class HistoryTableViewController: UITableViewController {
+class HistoryTableViewController: UITableViewController, RefereshDataDelegate {
 
     var historydetails = [History]()
     
@@ -33,6 +33,7 @@ class HistoryTableViewController: UITableViewController {
         
         do{
             try self.context?.delete(history)
+            saveHistory()
         }catch let error as NSError {
             print("Could not sabe \(error), \(error.userInfo)")
         }
@@ -68,6 +69,13 @@ class HistoryTableViewController: UITableViewController {
            historydetails = histories
         }
         
+    }
+    
+    func refereshData() {
+        if let histories = loadHistory(){
+            historydetails = histories
+            tableView.reloadData()
+        }
     }
     
     
@@ -149,9 +157,9 @@ class HistoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            historydetails.remove(at: indexPath.row)
-            tableView.reloadData()
-            saveHistory()
+            self.deleteHistory(historydetails[indexPath.row])
+            refereshData()
+           
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }

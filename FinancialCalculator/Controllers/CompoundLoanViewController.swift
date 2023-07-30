@@ -41,6 +41,14 @@ class CompoundLoanViewController: UIViewController, UITextFieldDelegate {
         txtLoanPaymentsPerYear.delegate = self
         txtLoanCompoundsPerYear.delegate = self
         
+        
+        txtLoanPresentValue.clearButtonMode = .whileEditing
+        txtLoanInterest.clearButtonMode = .whileEditing
+        txtLoanPayments.clearButtonMode = .whileEditing
+        txtLoanFutureValue.clearButtonMode = .whileEditing
+        txtLoanCompoundsPerYear.clearButtonMode = .whileEditing
+        txtLoanPaymentsPerYear.clearButtonMode = .whileEditing
+        
         self.viewScrollContent.contentSize = CGSize(width: self.viewSubStackContent.bounds.width, height: self.viewSubStackContent.bounds.height)
         
         self.clearValues()
